@@ -9,8 +9,11 @@ p{
     font-family: 'Raleway', sans-serif;
     color: White;
 }
-footer {
-    position: static;
+footer{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
 }
 
 .alt-chart{
