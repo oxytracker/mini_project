@@ -5,6 +5,6 @@ Flask-MySQL==1.5.2
 Flask-SQLAlchemy==2.5.1
 flask==2.0.1
 datetime
-json==4.0.2
+json
 pymysql==1.0.2
 smtplib
