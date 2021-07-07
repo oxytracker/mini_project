@@ -8,8 +8,9 @@ body{
 p{
     font-family: 'Raleway', sans-serif;
     color: White;
-    
-
+}
+footer {
+    position: static;
 }
 
 .alt-chart{
@@ -92,8 +93,6 @@ a.navbar-brand {
     margin: 15% 0 0 0;
 
 }
-@media (max-width: 480px) {
-    footer {
-        position: static;
-    }
+
+
 }
