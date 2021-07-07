@@ -6,4 +6,3 @@ Flask-SQLAlchemy==2.5.1
 flask==2.0.1
 datetime
 pymysql==1.0.2
-smtplib
