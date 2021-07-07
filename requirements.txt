@@ -1,7 +1,5 @@
-python==3.8.10
 pandas==1.2.5
 numpy==1.20.2
-numpydoc
 Flask==2.0.1
 Flask-MySQL==1.5.2
 Flask-SQLAlchemy==2.5.1
