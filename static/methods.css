@@ -33,6 +33,7 @@ p{
 .name-link{
     font-size: 2rem;
     margin: 0;
+    
     display: inline;
     padding: 0 2% 0 2%;
 }
@@ -87,4 +88,9 @@ a.navbar-brand {
     position: relative;
     margin: 15% 0 0 0;
 
+}
+@media (max-width: 480px) {
+    footer {
+        position: static;
+    }
 }
