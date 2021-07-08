@@ -6,10 +6,6 @@ p{
     font-family: 'Raleway', sans-serif;
     color: White;
 }
-.tab-space{
-    white-space:pre;
-}
-
 .alt-chart{
     font-size: 1rem;;
 }
@@ -24,6 +20,10 @@ p{
 }
 .body-main{
     margin:10% 0 20% 0;
+}
+.blocks{
+    display: inline-block;
+    text-align: center;
 }
 .ch1{
     padding: 2% 2% 2% 2%;
