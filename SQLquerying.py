@@ -30,7 +30,7 @@ def check_anamoly():
    cursor.execute(retrive)
    rows = cursor.fetchall()
    #Forming proper structure of data in the form of dictionary followed by dataframe
-   dict_=[{'Timestamp':(rows[i][0] + timedelta(hours=5, minutes=30)).strftime("%b %d %H:%M"), 'SpO2':rows[i][1], 'bpm':rows[i][2]}
+   dict_=[{'Timestamp':(rows[i][0] + timedelta(hours=5, minutes=50)).strftime("%b %d %H:%M"), 'SpO2':rows[i][1], 'bpm':rows[i][2]}
               for i,_ in enumerate(rows)]
    df=pd.DataFrame(dict_)
    #Taking the dataframe that only has the anamoly values
