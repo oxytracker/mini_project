@@ -13,7 +13,7 @@ def main_type():
     #Get the most recent 10 data values from the SQL database
     datas = last_tendata()
     #Sending email to the required authorities
-    send_msg()
+    #send_msg()
     return render_template('index.html', datas=datas)
 
 
