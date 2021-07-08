@@ -5,8 +5,9 @@ body{
 p{
     font-family: 'Raleway', sans-serif;
     color: White;
-    
-
+}
+.tab-space{
+    white-space:pre;
 }
 
 .alt-chart{
