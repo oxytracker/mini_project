@@ -22,7 +22,7 @@ p{
     margin:10% 0 20% 0;
 }
 .blocks{
-    display: inline-block;
+    display: block;
     text-align: center;
 }
 .ch1{
