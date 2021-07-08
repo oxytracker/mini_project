@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <title>OxyTracker</title>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="refresh" content="10">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +21,19 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- D3.js and Chart.js and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!-- D3.js and Chart.js -->
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>OxyTracker</title>
 
 </head>
 
-<body>
+<div>
         <!---------------------------------NAVBAR-------------------------------->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-danger fixed-top ">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-danger navbar-default">
                 <a class="navbar-brand" href="">OxyTracker</a>
                 
-                <button class="navbar-toggler btn-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                         <span class="navbar-toggler-icon"></span>
                 </button>
                         
@@ -47,44 +46,45 @@
                         </ul>           
                 </div>
         </nav>
-        <!----------------------------------------------------------------------->
-        <div class="reading col-12">
-                <p class="reading-heading">LAST READING TAKEN</p>
-                <p class="reading-text" id="reading-date">-</p>
-                <p class="reading-text"><span class="red-1">SpO2  </span><span id="reading-SpO2">-</span><span class="red-1">                bpm </span><span  id="reading-bpm">-</span></p>
-        </div> 
-        <!----------------------------------------------------------------------->       
-        <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div id="wrapper">
-                                <canvas id="canvas1" class="ch1"
-                                        style="width: 50%; height: 30%; background: #444444; border: 1px solid #444444; margin-top: 10px;">
-                                </canvas>
-                                <p>A plot of the SpO2 readings against time.</p>
-                                <script>
-                                        var c = document.getElementById("canvas1");
-                                        var ctx = c.getContext("2d");
-                                        ctx.font = "30px Arial";
-                                        ctx.fillText("Loading...", 10, 50);
-                                </script>
+        <div class="body-main">
+                <!----------------------------------------------------------------------->
+                <div class="reading col-12">
+                        <p class="reading-heading">LAST READING TAKEN</p>
+                        <p class="reading-text" id="reading-date">-</p>
+                        <p class="reading-text"><span class="red-1">SpO2  </span><span id="reading-SpO2">-</span><span class="red-1">                bpm </span><span  id="reading-bpm">-</span></p>
+                </div> 
+                <!----------------------------------------------------------------------->       
+                <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div id="wrapper">
+                                        <canvas id="canvas1" class="ch1"
+                                                style="width: 50%; height: 30%; background: #444444; border: 1px solid #444444; margin-top: 10px;">
+                                        </canvas>
+                                        <p>A plot of the BPM readings against time.</p>
+                                        <script>
+                                                var c = document.getElementById("canvas1");
+                                                var ctx = c.getContext("2d");
+                                                ctx.font = "30px Arial";
+                                                ctx.fillText("Loading...", 10, 50);
+                                        </script>
+                                </div>
                         </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div id="wrapper">
-                                <canvas id="canvas2" class="ch1"
-                                        style="width: 50%; height: 30%; background: #444444; border: 1px solid #444444; margin-top: 10px;">
-                                </canvas>
-                                <p>A plot of the BPM readings against time.</p>
-                                <script>
-                                        var c = document.getElementById("canvas2");
-                                        var ctx = c.getContext("2d");
-                                        ctx.font = "30px Arial";
-                                        ctx.fillText("Loading...", 10, 50);
-                                </script>
-                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div id="wrapper">
+                                        <canvas id="canvas2" class="ch1"
+                                                style="width: 50%; height: 30%; background: #444444; border: 1px solid #444444; margin-top: 10px;">
+                                        </canvas>
+                                        <p>A plot of the SpO2 readings against time.</p>
+                                        <script>
+                                                var c = document.getElementById("canvas2");
+                                                var ctx = c.getContext("2d");
+                                                ctx.font = "30px Arial";
+                                                ctx.fillText("Loading...", 10, 50);
+                                        </script>
+                                </div>
 
 
-                </div>
+                        </div>
 
         </div>
         <script>
@@ -224,7 +224,7 @@
                 let chart2 = new Chart(document.getElementById('canvas2'), options2);
         </script>
 
-        
+</div> 
 
 </body>
 <footer>
