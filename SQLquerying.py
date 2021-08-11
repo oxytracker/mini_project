@@ -25,16 +25,16 @@ try:
       dummy=pd.read_csv('dummy_data.csv')
       inner_dict=[{'Timestamp': dummy.iloc[i,0], 'SpO2': dummy.iloc[i,1], 'bpm': dummy.iloc[i,2]} for i in range(dummy.shape[0])]
    dictionary={'data':inner_dict}
-   print(dictionary)
+   #print(dictionary)
 
 
 except pymysql.Error as e:
    dummy=pd.read_csv('dummy_data.csv')
    data_dict=[{'Timestamp': dummy.iloc[i,0], 'SpO2': dummy.iloc[i,1], 'bpm': dummy.iloc[i,2]} for i in range(dummy.shape[0])]
    dictionary={'data':data_dict}
-   print(dictionary)
+   #print(dictionary)
 
-print(dictionary)
+#print(dictionary)
 
 def last_tendata():
    return dictionary
