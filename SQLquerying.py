@@ -9,7 +9,7 @@ spo2=98
 bpm=85
 try:
    #Connecting the SQL server to the python file
-   connection = pymysql.connect(host="sql6.freesqldatabase.com", user="sql642993", passwd="4XUSttYXwW",database="sql6429938", autocommit=True )
+   connection = pymysql.connect(host="sql6.freesqldatabase.com", user="sql6429938", passwd="",database="sql6429938", autocommit=True )
    cursor = connection.cursor()
 
    #Selecting the last 10 values from the table
